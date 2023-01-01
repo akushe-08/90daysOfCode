@@ -1,8 +1,5 @@
+from dsa.exceptions import EmptyStackException
 from dsa.node_class import Node
-
-
-class EmptyStackException(Exception):
-    pass
 
 
 class Stack:
@@ -46,7 +43,6 @@ class Stack:
                 disp_string += f"{temp.value}-->"
                 temp = temp.next
             print(disp_string)
-
 
 # stk = Stack()
 # stk.push(23)
